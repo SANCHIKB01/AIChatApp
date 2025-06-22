@@ -12,28 +12,36 @@ An intelligent AI-powered web app that lets users ask questions based on uploade
 
 📸 Screenshots
 Project View
+
 ![image](https://github.com/user-attachments/assets/cc9f92ee-a726-4627-9811-330d3cd9e876)
 
 Uploading File and QnA
+
 ![image](https://github.com/user-attachments/assets/1cac202d-7156-4f4c-873f-a01a0c7037c0)
 
 Delete the document
+
 ![image](https://github.com/user-attachments/assets/adf5ff38-aa97-4866-b670-0634a91715dc)
 
 MongoDB Chat messages
+
 ![image](https://github.com/user-attachments/assets/77555947-0de6-40ee-9f5a-ad1062b14d7f)
 
 Redix Cache messages
+
 ![image](https://github.com/user-attachments/assets/ba52f197-0e0b-47af-8cdb-79a3b97d7b8c)
 
 
 🛠️ Tech Stack
-  Layer                 Tools Used                                      
- Frontend           Flask + Jinja2 Templates                        
- Backend            Python (Flask), LangChain, FAISS                
- LLM API            Groq LLaMA 3       
- Embeddings         HuggingFaceEmbeddings via LangChain             
- Storage            In-memory (No persistent DB required)           
+
+| Layer        | Tools Used                                      |
+|--------------|--------------------------------------------------|
+| Frontend     | Flask + Jinja2 Templates                        |
+| Backend      | Python (Flask), LangChain, FAISS                |
+| LLM API      | Groq LLaMA 3                                    |
+| Embeddings   | HuggingFaceEmbeddings via LangChain             |
+| Storage      | In-memory (No persistent DB required)           |
+| Deployment   | Render (Gunicorn + Flask)                       |
                      
 
 📂 Project Structure
