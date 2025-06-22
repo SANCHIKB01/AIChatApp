@@ -37,16 +37,18 @@ Redix Cache messages
                      
 
 📂 Project Structure
+```
 ai-chat-app/
-  ├── app.py
-  ├── requirements.txt
-  ├── templates/
-  │   └── ask.html
-  │   └── base.html
-  ├── utils/
-  │   └── database.py
-  │   └── rag_system.py
-  ├── screenshots/
+├── app.py
+├── requirements.txt
+├── templates/
+│   ├── ask.html
+│   └── base.html
+├── utils/
+│   ├── database.py
+│   └── rag_system.py
+├── screenshots/
+```
 
 
 🗣️ Set Your API Keys 
@@ -60,11 +62,11 @@ These are added as environment variables named `GROQ_API_KEY` and `HUGGINGFACEHU
 https://drive.google.com/file/d/1kgMNXO42R5DTQNe4EOXKZoS8Bf9mNV6a/view?usp=sharing
 
 
-🔗 GitHUb Repo: https://github.com/SANCHIKB01/ai-chat-app
+🔗 GitHUb Repo: https://github.com/SANCHIKB01/AIChatApp
 
 Local Setup
 bash
-git clone https://github.com/SANCHIKB01/ai-chat-app.git
+git clone https://github.com/SANCHIKB01/AIChatApp.git
 cd ai-chat-app
 pip install -r requirements.txt
 python app.py
