@@ -38,28 +38,26 @@ Redix Cache messages
 
 📂 Project Structure
 ai-chat-app/
-├── app.py
-├── requirements.txt
-├── templates/
-│ └── ask.html
-│ └── base.html
-├── utils/
-│ └── database.py
-│ └── rag_system.py
-├── screenshots/
-│ ├── upload.png
-│ ├── ask.png
-│ └── history.png
+  ├── app.py
+  ├── requirements.txt
+  ├── templates/
+  │   └── ask.html
+  │   └── base.html
+  ├── utils/
+  │   └── database.py
+  │   └── rag_system.py
+  ├── screenshots/
 
 
 🗣️ Set Your API Keys 
-> Before running the app, you need to generate two API keys:  
+Before running the app, you need to generate two API keys:  
  1. Groq API Key from [console.groq.com](https://console.groq.com) — used to access the LLaMA model.  
  2. Hugging Face API Token from [huggingface.co](https://huggingface.co/settings/tokens) — used to create embeddings for the document text.
->These are added as environment variables named `GROQ_API_KEY` and `HUGGINGFACEHUB_API_TOKEN`.
+These are added as environment variables named `GROQ_API_KEY` and `HUGGINGFACEHUB_API_TOKEN`.
 
 
-🎥 Demo Video You can watch a full walkthrough here:  
+🎥 Demo Video You can watch a full walkthrough here:
+https://drive.google.com/file/d/1kgMNXO42R5DTQNe4EOXKZoS8Bf9mNV6a/view?usp=sharing
 
 
 🔗 GitHUb Repo: https://github.com/SANCHIKB01/ai-chat-app
