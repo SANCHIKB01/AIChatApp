@@ -40,8 +40,8 @@ Redix Cache messages
 | Backend      | Python (Flask), LangChain, FAISS                |
 | LLM API      | Groq LLaMA 3                                    |
 | Embeddings   | HuggingFaceEmbeddings via LangChain             |
-| Storage      | In-memory (No persistent DB required)           |
-| Deployment   | Render (Gunicorn + Flask)                       |
+| Storage      | MongoDB for storing chat/document history, Redis for session caching |
+
                      
 
 📂 Project Structure
