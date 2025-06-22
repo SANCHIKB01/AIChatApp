@@ -1,36 +1,75 @@
-# Welcome to the AI Chat Application Documentation
-This application is built using Python Flask and provides the following features:
+AI Chat App (Flask + Groq + LangChain + FAISS)
+An intelligent AI-powered web app that lets users ask questions based on uploaded documents (PDF/TXT) or have open-ended chats. It uses Groq's ultra-fast LLaMA 3 model and LangChain's Retrieval-Augmented Generation (RAG) pipeline with FAISS for document understanding.
 
-## 1. Real-time Chat System
-The chat system allows users to send and receive messages in real-time. Messages are stored in MongoDB database and cached in Redis for faster access.
+🚀 Features
+- 🔍 Upload `.pdf` or `.txt` files and ask questions about them
+- 🧠 Powered by Groq’s blazing-fast LLaMA 3 model
+- 🧰 Uses LangChain and FAISS for document retrieval
+- 🧾 Displays chat history and uploaded documents with delete buttons
+- 🌐 Fully deployable on platforms like Render
 
-## 2. Document Upload and Processing
-Users can upload PDF and TXT files. The system processes these documents by:
-- Extracting text content
-- Splitting text into smaller chunks
-- Creating vector embeddings
-- Storing in a searchable index
+📸 Screenshots
+Project View
+![image](https://github.com/user-attachments/assets/cc9f92ee-a726-4627-9811-330d3cd9e876)
 
-## 3. AI-Powered Question Answering
-The RAG (Retrieval-Augmented Generation) system can answer questions about uploaded documents by:
-- Searching for relevant document sections
-- Using AI models to generate accurate answers
-- Providing confidence scores
+Uploading File and QnA
+![image](https://github.com/user-attachments/assets/1cac202d-7156-4f4c-873f-a01a0c7037c0)
 
-## 4. Database Integration
-- MongoDB: Stores chat messages and user data
-- Redis: Caches recent messages for fast retrieval
-- FAISS: Vector database for document search
+Delete the document
 
-## 5. Deployment Features
-The application can be deployed to cloud platforms like:
-- Railway
+ 
 
-## Technical Stack:
-- Backend: Python Flask
-- Database: MongoDB Atlas
-- Cache: Redis Cloud
-- AI: LLaMA Groq
-- Vector Search: FAISS
+MongoDB Chat messages
+ 
 
-For support, contact the development team.
+Redix Cache messages
+
+ 
+
+
+
+
+🛠️ Tech Stack
+  Layer                 Tools Used                                      
+ Frontend           Flask + Jinja2 Templates                        
+ Backend            Python (Flask), LangChain, FAISS                
+ LLM API            Groq LLaMA 3       
+ Embeddings         HuggingFaceEmbeddings via LangChain             
+ Storage            In-memory (No persistent DB required)           
+                     
+
+📂 Project Structure
+ai-chat-app/
+├── app.py
+├── requirements.txt
+├── templates/
+│ └── ask.html
+│ └── base.html
+├── utils/
+│ └── database.py
+│ └── rag_system.py
+├── screenshots/
+│ ├── upload.png
+│ ├── ask.png
+│ └── history.png
+
+🗣️ Set Your API Keys 
+> Before running the app, you need to generate two API keys:  
+ 1. Groq API Key from [console.groq.com](https://console.groq.com) — used to access the LLaMA model.  
+ 2. Hugging Face API Token from [huggingface.co](https://huggingface.co/settings/tokens) — used to create embeddings for the document text.
+>These are added as environment variables named `GROQ_API_KEY` and `HUGGINGFACEHUB_API_TOKEN`.
+
+🎥 Demo Video You can watch a full walkthrough here:  
+
+🔗 GitHUb Repo: https://github.com/SANCHIKB01/ai-chat-app
+
+Local Setup
+bash
+git clone https://github.com/SANCHIKB01/ai-chat-app.git
+cd ai-chat-app
+pip install -r requirements.txt
+python app.py
+
+
+
+
