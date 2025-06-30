@@ -8,6 +8,32 @@ An intelligent AI-powered web app that lets users ask questions based on uploade
 - 🧠 Powered by Groq’s blazing-fast LLaMA 3 model
 - 🧰 Uses LangChain and FAISS for document retrieval
 - 🧾 Displays chat history and uploaded documents with delete buttons
+  
+
+# 🛠️ Tech Stack
+
+| Layer        | Tools Used                                      |
+|--------------|--------------------------------------------------|
+| Frontend     | Flask + Jinja2 Templates                        |
+| Backend      | Python (Flask), LangChain, FAISS                |
+| LLM API      | Groq LLaMA 3                                    |
+| Embeddings   | HuggingFaceEmbeddings via LangChain             |
+| Database     | MongoDB for storing chat/document history, Redis for session caching |
+
+                    
+# 📂 Project Structure
+```
+ai-chat-app/
+├── app.py
+├── requirements.txt
+├── templates/
+│   ├── ask.html
+│   └── base.html
+├── utils/
+│   ├── database.py
+│   └── rag_system.py
+├── screenshots/
+```
 
 
 # 📸 Screenshots
@@ -32,33 +58,6 @@ An intelligent AI-powered web app that lets users ask questions based on uploade
 ![image](https://github.com/user-attachments/assets/ba52f197-0e0b-47af-8cdb-79a3b97d7b8c)
 
 
-# 🛠️ Tech Stack
-
-| Layer        | Tools Used                                      |
-|--------------|--------------------------------------------------|
-| Frontend     | Flask + Jinja2 Templates                        |
-| Backend      | Python (Flask), LangChain, FAISS                |
-| LLM API      | Groq LLaMA 3                                    |
-| Embeddings   | HuggingFaceEmbeddings via LangChain             |
-| Database     | MongoDB for storing chat/document history, Redis for session caching |
-
-                     
-
-# 📂 Project Structure
-```
-ai-chat-app/
-├── app.py
-├── requirements.txt
-├── templates/
-│   ├── ask.html
-│   └── base.html
-├── utils/
-│   ├── database.py
-│   └── rag_system.py
-├── screenshots/
-```
-
-
 # 🗣️ Set Your API Keys 
 Before running the app, you need to generate two API keys:  
  1. Groq API Key from [console.groq.com](https://console.groq.com) — used to access the LLaMA model.  
@@ -70,9 +69,11 @@ These are added as environment variables named `GROQ_API_KEY` and `HUGGINGFACEHU
 https://drive.google.com/file/d/1kgMNXO42R5DTQNe4EOXKZoS8Bf9mNV6a/view?usp=sharing
 
 
-🔗 GitHUb Repo: https://github.com/SANCHIKB01/AIChatApp
+# 🔗 GitHub Repo: 
+https://github.com/SANCHIKB01/AIChatApp
 
-Local Setup
+
+# 🖥 Local Setup
 ```bash
 git clone https://github.com/SANCHIKB01/AIChatApp.git
 cd AIChatApp
