@@ -1,6 +1,6 @@
 # AI Chat App - Intelligent Document Q&A System
-AI Chat App (Flask + Groq + LangChain + FAISS)
-An intelligent AI-powered web app that lets users ask questions based on uploaded documents (PDF/TXT) or have open-ended chats. It uses Groq's ultra-fast LLaMA 3 model and LangChain's Retrieval-Augmented Generation (RAG) pipeline with FAISS for document understanding.
+### AI Chat App (Flask + LangChain + RAG + Redis + FAISS)
+An intelligent AI-powered web application that enables users to upload documents (PDF/TXT) and ask questions about their content, or engage in open-ended conversations. Built with Groq's ultra-fast LLaMA 3 model and powered by LangChain's Retrieval-Augmented Generation (RAG) pipeline with FAISS vector database.
 
 
 # 🚀 Features
